@@ -44,7 +44,21 @@ router.post('/signin', async (req, res) => {
         console.log(process.env.JWT_SECRET);
         const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: "1h" });
         console.log(token);
+        //setting the token in the cookie
+        
+        res.cookie('token', token, { httpOnly: true });
+
         return res.status(200).json({ token, user: { id: user._id, name: user.name, email: user.email } });
+    } catch (error) {
+        res.status(500).json({ message: "Server error" });
+    }
+});
+
+//logOut User
+router.get('/logout', async (req, res) => {
+    try {
+        res.clearCookie('token');
+        res.status(200).json({ message: "Logged out successfully" });
     } catch (error) {
         res.status(500).json({ message: "Server error" });
     }

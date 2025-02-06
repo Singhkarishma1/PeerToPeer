@@ -76,6 +76,7 @@ function Navbar({ scrollToAbout }) {
             {!isLoggedIn ? (
               <>
                 <button className="text-black dark:text-white px-6 py-2.5 font-semibold" onClick={handleSignIn}>SignIn</button>
+                <button className="bg-[#4A3BFF] text-white px-6 py-2.5 font-semibold rounded-md hover:shadow-lg" onClick={handleLogin}>Login</button>
               </>
             ) : (
               <div className="flex items-center space-x-2">
