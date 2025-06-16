@@ -53,7 +53,7 @@ const LandingPage = () => {
                         <FeatureCard
                             title="Virtual Workspaces"
                             description="Collaborate in real-time with seamless virtual workspaces designed to bring your ideas to life. Share resources, brainstorm concepts, and provide feedback effortlessly—all from the comfort of your own space. Whether you’re solving a complex problem or creating something new, our virtual workspaces make teamwork intuitive and efficient. With tools that keep everyone on the same page, you can focus on what truly matters: learning, growing, and achieving together."
-                            imageSrc="https://cdn.autonomous.ai/static/upload/images/common/upload/20210909/3-Virtual-Workspace-Software-to-Work-Digitally-With-Your-Team_21f49ba1d4d.jpg"
+                            imageSrc="https://uploads-ssl.webflow.com/5fafb07153e6a67d3f349760/602d1e006ac00250d5da2e42_What%20is%20a%20Virtual%20Workplace.jpg"
                             isLeftAligned={false}
                         />
                         <FeatureCard
